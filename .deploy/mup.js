@@ -9,7 +9,7 @@ module.exports = {
   },
 
   meteor: {
-    name: 'Denton Revival',
+    name: 'dentonRevival',
     path: '../',
     servers: {
       one: {},
