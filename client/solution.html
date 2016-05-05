@@ -1,7 +1,7 @@
 <template name="solution">
-<h4>{{title}} <small>{{score}} <a href="" data-action="upvote" data-solutionId="{{_id}}">Upvote</a>
+<div class="jumbotron">
+<h4>{{score}} - {{title}} <small><a href="" data-action="upvote" data-solutionId="{{_id}}">Upvote</a>
 <a href="" data-action="downvote" data-solutionId="{{_id}}">Downvote</a></small></h4>
-
 <p>{{description}}</p>
-<hr>
+</div>
 </template>
