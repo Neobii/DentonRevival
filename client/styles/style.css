@@ -363,7 +363,7 @@ img[alt="Photobucket"], article p object { display: none; } /* to stop display o
  */
 
 header[role="banner"] {
-	background: url(../img/header-bg.jpg) 0 0 repeat-x;
+	background: url(http://rubberglovesdentontx.com/img/header-bg.jpg) 0 0 repeat-x;
 	height: 326px;
 	margin-bottom: 30px;
 	overflow: hidden;
@@ -371,7 +371,7 @@ header[role="banner"] {
 	}
 
 header[role="banner"] h1 {
-	background: url(../img/header.png) center center no-repeat;
+	background: url(http://rubberglovesdentontx.com/img/header.png) center center no-repeat;
 	height: 290px;
 	margin-bottom: 4px;
 	overflow: hidden;
@@ -387,8 +387,8 @@ header[role="banner"] h1 a {
 	}
 
 header[role="banner"] span.gradient-left, header[role="banner"] span.gradient-right { height: 320px; position: absolute; top: 0; width: 200px; }
-header[role="banner"] span.gradient-left { background: url(../img/gradient-l.png) left top repeat-y; left: 0; }
-header[role="banner"] span.gradient-right { background: url(../img/gradient-r.png) right top repeat-y; right: 0; }
+header[role="banner"] span.gradient-left { background: url(http://rubberglovesdentontx.com/img/gradient-l.png) left top repeat-y; left: 0; }
+header[role="banner"] span.gradient-right { background: url(http://rubberglovesdentontx.com/img/gradient-r.png) right top repeat-y; right: 0; }
 
 h1 {
 	font-size:30px;
@@ -423,9 +423,9 @@ h2 {
 
 /* border-bottoms for h2s -- */
 .grid_12 h2, grid_8 h2, .grid_4 h2 { border-bottom: none; margin-left: -3px; padding: 0 0 6px 3px; }
-.grid_12 h2 { background: url(../img/h2940.png) left bottom no-repeat; width: 943px; }
-.grid_8 h2 { background: url(../img/h2620.png) left bottom no-repeat; width: 623px; }
-.grid_4 h2 { background: url(../img/h2300.png) left bottom no-repeat; width: 303px; }
+.grid_12 h2 { background: url(http://rubberglovesdentontx.com/img/h2940.png) left bottom no-repeat; width: 943px; }
+.grid_8 h2 { background: url(http://rubberglovesdentontx.com/img/h2620.png) left bottom no-repeat; width: 623px; }
+.grid_4 h2 { background: url(http://rubberglovesdentontx.com/img/h2300.png) left bottom no-repeat; width: 303px; }
 .edit form h2 { background-image: none; }
 
 article a, article a:active, article a:visited { color: rgb(180, 155, 41); }
