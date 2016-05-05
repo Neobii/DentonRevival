@@ -296,6 +296,9 @@ button {  width: auto; overflow: visible; }
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+h2 {
+	margin-bottom:5px;
+}
 
 /* @font-face declarations */
 @font-face {
@@ -601,7 +604,7 @@ footer a:focus, footer a:hover { color: rgb(238, 238, 238); }
 	text-align: right;
 	}
 
-footer p { font-size: 8px; }
+footer p { font-size: 12px; }
 
 /*
  * edit
