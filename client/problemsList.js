@@ -11,6 +11,6 @@ Template.problemsList.events({
 
 Template.problemsList.helpers({
 	problems() {
-		return Problems.find({})
+		return Problems.find({}, {sort: {score: -1}})
 	}
 })
