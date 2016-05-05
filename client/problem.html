@@ -1,0 +1,13 @@
+<template name="problemView">
+{{#with problem}}
+<h1>{{score}} - {{title}} <small><a href="" data-action="upvote" data-problemId="{{_id}}">Upvote</a>
+<a href="" data-action="downvote" data-problemId="{{_id}}">Downvote</a></small></h1>
+<h4><a href="{{pathFor 'newSolution' _id=_id}}"><small>Add new Solution</small></a></h4>
+<hr>
+<p>{{description}}</p>
+<h3>Solutions</h3>
+{{#each solutions}}
+{{> solution}}
+{{/each}}
+{{/with}}
+</template>
