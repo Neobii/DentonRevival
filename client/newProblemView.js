@@ -1,7 +1,7 @@
 AutoForm.hooks({
 	insertProblem: {
 		onSuccess() {
-			FlowRouter.go("home");
+			FlowRouter.go("problems");
 		}
 	}
 })

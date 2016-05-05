@@ -12,7 +12,10 @@ module.exports = {
     name: 'dentonRevival',
     path: '../',
     servers: {
-      one: {},
+      one: {
+        host: '104.236.71.197',
+        username: 'root',
+      },
     },
     env: {
       ROOT_URL: 'http://104.236.71.197',
