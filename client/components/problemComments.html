@@ -1,4 +1,4 @@
-<template name="commentsView">
+<template name="problemComments">
 {{#if $.Session.get "isAddingComment"}}
 <h2>Comments <small><a href="" data-action='cancel-comment'>Cancel</a></small></h2>
 {{#autoForm collection="Comments" id="newCommentGlobal" type="insert"}}
@@ -6,10 +6,10 @@
 {{> afQuickField name="comment"}}
 <button class="btn btn-primary">Submit</button>
 {{/autoForm}}
-<hr>
 {{else}}
 <h2>Comments <small><a href="" data-action='add-comment'>Add Comment</a></small></h2>
 {{/if}}
+<hr>
 <div class="row">
 {{#each comments}}
 {{> singleComment}}

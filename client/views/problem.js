@@ -14,3 +14,11 @@ Template.problemView.events({
 		Problems.update({_id: problemId}, {$inc: {score: -1}})
 	},
 })
+
+AutoForm.hooks({
+	newCommentProblem: {
+		onSuccess() {
+			Session.set("isAddingComment", false)
+		}
+	}
+})

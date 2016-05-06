@@ -1,5 +1,13 @@
 <template name="solutionView">
 {{#with solution}}
-
+<h2>{{title}}</h2>
+<p>{{description}}</p>
+<hr>
+<h3>Comments <small><a href="" data-action="add-comment">Add Comment</a></small></h3>
+<div class="row">
+{{#each comments}}
+{{> singleComment}}
+{{/each}}
+</div>
 {{/with}}
 </template>
