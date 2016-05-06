@@ -2,7 +2,7 @@
 {{#with problem}}
 <h2>{{score}} - {{title}} <br>{{> problemVoting}}</h2>
 <p>{{description}}</p>
-<h3>Solutions - <a href="{{pathFor 'newSolution' _id=_id}}"><small>Add new Solution</small></a></h3>
+<h3>Solutions - <a href="{{pathFor 'newSolution' slug=slug}}"><small>Add new Solution</small></a></h3>
 {{#each solutions}}
 {{> solution}}
 {{/each}}

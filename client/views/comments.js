@@ -4,10 +4,12 @@ Template.commentsView.helpers({
 			return Comments.find({type: "global"}, {sort: {date: -1}})
 		}
 		if(FlowRouter.getRouteName() === "problem") {
-			return Comments.find({problemId: FlowRouter.getParam("_id")}, {sort: {date: -1}});
+			var p = Problems.findOne({_id: FlowRouter.getParam("slug")})
+			return Comments.find({problemId: p._id}, {sort: {date: -1}});
 		}
 		if(FlowRouter.getRouteName() === "solution") {
-			return Comments.find({solutionId: FlowRouter.getParam("solutionId")}, {sort: {date: -1}});
+			var s = Solutions.findOne({_id: FlowRouter.getParam("solutionSlug")})
+			return Comments.find({solutionId: s._id}, {sort: {date: -1}});
 		}
 	}
 })

@@ -1,6 +1,6 @@
 Template.problemView.helpers({
 	problem() {
-		return Problems.findOne({_id: FlowRouter.getParam("_id")})
+		return Problems.findOne({slug: FlowRouter.getParam("slug")})
 	}
 })
 

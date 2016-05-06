@@ -49,6 +49,7 @@ insecure@1.0.7
 jquery@1.11.8
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
+konecty:autolinker@1.0.3
 launch-screen@1.0.11
 livedata@1.0.18
 localstorage@1.0.9

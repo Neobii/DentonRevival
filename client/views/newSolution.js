@@ -1,13 +1,13 @@
 Template.newSolutionView.helpers({
 	problem() {
-		return Problems.findOne({_id: FlowRouter.getParam("_id")});
+		return Problems.findOne({slug: FlowRouter.getParam("slug")});
 	}
 })
 
 AutoForm.hooks({
 	insertNewSolution: {
 		onSuccess() {
-			FlowRouter.go("problem", {_id: FlowRouter.getParam("_id")});
+			FlowRouter.go("problem", {slug: FlowRouter.getParam("slug")});
 		}
 	}
 })
