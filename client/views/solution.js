@@ -10,10 +10,10 @@ Template.solutionView.helpers({
 Template.solutionView.events({
 	"click [data-action='upvote']"(e, t) {
 		let solutionId = $(e.currentTarget).attr("data-solutionId");
-		Solutions.update({_id: solutionId}, {$inc: {score: 1}})
+		App.upvote("solution", solutionId);
 	},
 	"click [data-action='downvote']"(e, t) {
 		let solutionId = $(e.currentTarget).attr("data-solutionId");
-		Solutions.update({_id: solutionId}, {$inc: {score: -1}})
+		App.downvote("solution", solutionId)
 	},
 })

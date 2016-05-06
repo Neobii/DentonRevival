@@ -7,11 +7,11 @@ Template.problemView.helpers({
 Template.problemView.events({
 	"click [data-action='upvote']"(e, t) {
 		let problemId = $(e.currentTarget).attr("data-problemId");
-		Problems.update({_id: problemId}, {$inc: {score: 1}})
+		App.upvote("problem", problemId)
 	},
 	"click [data-action='downvote']"(e, t) {
 		let problemId = $(e.currentTarget).attr("data-problemId");
-		Problems.update({_id: problemId}, {$inc: {score: -1}});
+		App.downvote("problem", problemId);
 	},
 })
 

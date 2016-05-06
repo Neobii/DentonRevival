@@ -1,7 +1,7 @@
 <template name="solution">
 <div class="jumbotron">
-<h3>{{score}} - <a href="{{pathFor 'solution' solutionId=_id _id=../_id}}">{{title}}</a> <small><a href="" data-action="upvote" data-solutionId="{{_id}}">Upvote</a>
-<a href="" data-action="downvote" data-solutionId="{{_id}}">Downvote</a></small></h3>
+<h3>{{score}} - <a href="{{pathFor 'solution' solutionId=_id _id=../_id}}">{{title}}</a> 
+{{>solutionVoting}}</h3>
 <p style='color:black;'>{{description}}</p>
 </div>
 </template>

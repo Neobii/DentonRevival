@@ -1,0 +1,4 @@
+<template name="problemVoting">
+{{#if hasVotedOn _id}}<small>You voted!</small>{{else}}<small> <a href="" data-action="upvote" data-problemId="{{_id}}">Upvote</a>
+<a href="" data-action="downvote" data-problemId="{{_id}}">Downvote</a></small>{{/if}}
+</template>

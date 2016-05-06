@@ -1,7 +1,6 @@
 <template name="solutionView">
 {{#with solution}}
-<h2>{{score}} - {{title}} <small><a href="" data-action="upvote" data-solutionId="{{_id}}">Upvote</a>
-<a href="" data-action="downvote" data-solutionId="{{_id}}">Downvote</a></small></h2>
+<h2>{{score}} - {{title}} {{> solutionVoting}}</h2>
 <p>{{description}}</p>
 <h3>Fixes problem: {{#with problem}}<a href="{{pathFor 'problem' _id=_id}}">{{title}}</a>{{/with}}</h3>
 <hr>
