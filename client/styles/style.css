@@ -663,7 +663,7 @@ form label {
 
 input, select, textarea { font-size: 1.2em; }
 .edit input, select { vertical-align: baseline; }
-input[type="text"], input[type="url"] { width: 250px; }
+input[type="text"], input[type="url"] { width: 100%; }
 .show-data input[type="text"], .show-data input[type="url"] { width: 200px; }
 .show-data input#date { width: 105px; }
 select { min-width: 60px; padding: 2px 0 1px; }

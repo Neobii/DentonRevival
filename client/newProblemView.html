@@ -1,5 +1,5 @@
 <template name="newProblemView">
-<h3>Add a new Problem <a href="{{pathFor 'home'}}"><small>View Problems</small></a></h3>
+<h2>Add a new Problem <a href="{{pathFor 'home'}}"><small>View Problems</small></a></h2>
 {{#autoForm type="insert" collection="Problems" id="insertProblem"}}
 {{> afQuickField name="title"}}
 {{> afQuickField name="description"}}
