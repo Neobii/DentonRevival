@@ -1,0 +1,3 @@
+<template name="solutionTodo">
+<h3 class="todo {{isFinished}}">{{#autoForm collection="SolutionsTodos" autosave=true type="update" id=updateId doc=this}}{{> afQuickField name="isFinished"}}{{/autoForm}}{{title}}</h3>
+</template>

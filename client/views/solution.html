@@ -4,6 +4,19 @@
 <p>{{description}}</p>
 <h3>Fixes problem: {{#with problem}}<a href="{{pathFor 'problem' _id=_id}}">{{title}}</a>{{/with}}</h3>
 <hr>
+{{#unless $.Session.get "currentlyAddingTodo"}}
+<h2>Todo <small><a href="" data-action="add-todo">Add Todo</a></small></h2>
+{{else}}
+<h2>Todo <small><a href="" data-action="cancel-todo">Cancel Todo</a></small></h2>
+{{#autoForm type="insert" id="insertTodoForm" collection="SolutionsTodos"}}
+{{> afQuickField name="title"}}
+<button class="btn btn-primary">Submit</button>
+{{/autoForm}}
+<hr>
+{{/unless}}
+{{#each todos}}
+{{> solutionTodo}}
+{{/each}}
 {{/with}}
 {{> commentsView}}
 </template>

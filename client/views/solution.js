@@ -16,4 +16,10 @@ Template.solutionView.events({
 		let solutionId = $(e.currentTarget).attr("data-solutionId");
 		App.downvote("solution", solutionId)
 	},
+	"click [data-action='add-todo']"(e, t) {
+		Session.set("currentlyAddingTodo", true);
+	},
+	"click [data-action='cancel-todo']"(e, t) {
+		Session.set("currentlyAddingTodo", false);
+	}
 })
