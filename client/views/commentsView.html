@@ -1,0 +1,18 @@
+<template name="commentsView">
+<h2>Comments</h2>
+<p>Voice your opinions here!</p>
+{{#autoForm collection="Comments" id="insertCommentId" type="insert"}}
+{{> afQuickField name="name"}}
+{{> afQuickField name="comment"}}
+<button class="btn btn-primary">Submit</button>
+{{/autoForm}}
+<hr>
+<div class="row">
+{{#each comments}}
+<div class="col-md-4">
+<h3>{{name}} <small>{{date}}</small></h3>
+<p>{{comment}}</p>
+</div>
+{{/each}}
+</div>
+</template>
