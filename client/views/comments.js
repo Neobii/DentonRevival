@@ -7,7 +7,7 @@ Template.commentsView.helpers({
 			return Comments.find({problemId: FlowRouter.getParam("_id")}, {sort: {date: -1}});
 		}
 		if(FlowRouter.getRouteName() === "solution") {
-			return Comments.find({}, {sort: {date: -1}});
+			return Comments.find({solutionId: FlowRouter.getParam("solutionId")}, {sort: {date: -1}});
 		}
 	}
 })
