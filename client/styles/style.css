@@ -661,6 +661,10 @@ form label {
 	text-transform: uppercase;
 	}
 
+p {
+	font-size: 15px !important;
+}
+
 input, select, textarea { font-size: 1.2em; }
 .edit input, select { vertical-align: baseline; }
 input[type="text"], input[type="url"] { width: 100%; }
