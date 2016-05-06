@@ -11,7 +11,7 @@ Template.problemView.events({
 	},
 	"click [data-action='downvote']"(e, t) {
 		let problemId = $(e.currentTarget).attr("data-problemId");
-		Problems.update({_id: problemId}, {$inc: {score: -1}})
+		Problems.update({_id: problemId}, {$inc: {score: -1}});
 	},
 })
 
