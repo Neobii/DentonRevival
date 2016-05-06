@@ -10,7 +10,7 @@
 <h2>Todo <small><a href="" data-action="cancel-todo">Cancel Todo</a></small></h2>
 {{#autoForm type="insert" id="insertTodoForm" collection="SolutionsTodos"}}
 {{> afQuickField name="title"}}
-<button class="btn btn-primary">Submit</button>
+<button class="btn btn-primary" data-action='cancel-todo'>Submit</button>
 {{/autoForm}}
 <hr>
 {{/unless}}
