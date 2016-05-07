@@ -1,7 +1,10 @@
 <template name="popularView">
 <div class="row">
 <div class="col-md-6">
-{{> problemsView}}
+<a href="{{pathFor 'problems'}}"><h2>Problems</h2></a>
+{{#each popularProblems}}
+{{>problem}}
+{{/each}}
 </div>
 <div class="col-md-6">
 <h2>Solutions</h2>

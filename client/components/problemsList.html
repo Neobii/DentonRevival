@@ -1,11 +1,5 @@
 <template name="problemsList">
 {{#each problems}}
-<div class="jumbotron">
-<h3>{{score}} - <a href="{{pathFor 'problem' slug=slug}}">{{title}}</a>
-{{> problemVoting}}</h3>
-<p style="color:black;">
-{{description}}
-</p>
-</div>
+{{>problem}}
 {{/each}}
 </template>

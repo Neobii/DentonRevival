@@ -12,6 +12,9 @@ Template.popularView.helpers({
 		return TargetGroups.find().count();
 	},
 	targetGroups() {
-		return TargetGroups.find()
+		return TargetGroups.find();
+	},
+	popularProblems() {
+		return Problems.find({}, {sort: {score: -1}, limit: 3});
 	}
 })
