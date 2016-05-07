@@ -2,6 +2,7 @@
 <h2>Add a new Problem </h2>
 {{#autoForm type="insert" collection="Problems" id="insertProblem"}}
 {{> afQuickField name="title"}}
+{{> afQuickField name="targetGroupId"}}
 {{> afQuickField name="description"}}
 <button type="submit" class="btn btn-primary">Submit</button>
 {{/autoForm}}
