@@ -1,0 +1,10 @@
+<template name="targetGroupView">
+{{#with targetGroup}}
+<h2>{{name}}</h2>
+<p>{{description}}</p>
+<hr>
+{{#each problems}}
+{{> problem}}
+{{/each}}
+{{/with}}
+</template>

@@ -2,6 +2,7 @@
 <div class="jumbotron">
 <h3>{{score}} - <a href="{{pathFor 'problem' slug=slug}}">{{title}}</a>
 {{> problemVoting}}</h3>
+{{#with targetGroup}}<a href="{{pathFor 'targetGroup' slug=slug}}"><p style="color:black;">- {{name}}</p></a>{{/with}}
 <p style="color:black;">
 {{description}}
 </p>

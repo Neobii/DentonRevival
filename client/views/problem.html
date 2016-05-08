@@ -1,6 +1,7 @@
 <template name="problemView">
 {{#with problem}}
 <h2>{{score}} - {{title}} <br>{{> problemVoting}}</h2>
+<h3>{{targetGroup.name}}</h3>
 <p>{{description}}</p>
 <h3>Solutions - <a href="{{pathFor 'newSolution' slug=slug}}"><small>Add new Solution</small></a></h3>
 {{#each solutions}}
