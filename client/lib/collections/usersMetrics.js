@@ -14,10 +14,6 @@ UsersMetrics.attachSchema({
 		type: String,
 		label: "Metric Id"
 	},
-	metricResult: {
-		type: Boolean,
-		label: "Metric Result"
-	},
 	userId: {
 		type: String,
 		label: "userId",

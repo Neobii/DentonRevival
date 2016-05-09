@@ -3,3 +3,7 @@ Template.newPerformanceIndicatorView.helpers({
 		return Problems.findOne({slug: FlowRouter.getParam("slug")});
 	}
 })
+
+/*AutoForm.hooks({
+
+})*/

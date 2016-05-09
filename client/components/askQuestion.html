@@ -1,4 +1,9 @@
 <template name="askQuestion">
 <h3>{{question}}</h3>
-{{#autoForm type="insert" id="insertAnswer" collection="Metrics"}}{{/autoForm}}
+{{#if currentUserHasVoted}}
+<p>You voted!</p>
+{{else}}
+<p><a href="" data-action="vote-yes">Yes</a> - <a href="" data-action="vote-no">No</a></p>
+{{/if}}
+<hr>
 </template>
