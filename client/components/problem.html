@@ -4,7 +4,7 @@
 {{> problemVoting}}</h3>
 {{#with targetGroup}}<a href="{{pathFor 'targetGroup' slug=slug}}"><p style="color:black;">- {{name}}</p></a>{{/with}}
 <p style="color:black;">
-{{description}}
+{{#autolink}}{{description}}{{/autolink}}
 </p>
 </div>
 </template>

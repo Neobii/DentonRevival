@@ -1,5 +1,5 @@
 <template name="askQuestion">
-<h3>{{question}}</h3>
+<h3>{{#autolink}}{{question}}{{/autolink}}</h3>
 {{#if currentUserHasVoted}}
 <p>You voted!</p>
 {{else}}

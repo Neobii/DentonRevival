@@ -1,7 +1,7 @@
 <template name="targetGroupView">
 {{#with targetGroup}}
 <h2>{{name}}</h2>
-<p>{{description}}</p>
+<p>{{#autolink}}{{description}}{{/autolink}}</p>
 <hr>
 {{#each problems}}
 {{> problem}}

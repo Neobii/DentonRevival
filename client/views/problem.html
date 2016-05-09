@@ -2,7 +2,7 @@
 {{#with problem}}
 <h2>{{score}} - {{title}} <br>{{> problemVoting}}</h2>
 <h3>{{targetGroup.name}}</h3>
-<p>{{description}}</p>
+<p>{{#autolink}}{{description}}{{/autolink}}</p>
 <h2>Performance Indicators - <a href="{{pathFor 'newPI' slug=slug}}"><small>Add new Performance Indicator</small></a></h2>
 {{#each metrics}}
 {{> metric}}

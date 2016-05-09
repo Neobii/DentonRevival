@@ -1,7 +1,7 @@
 <template name="solutionView">
 {{#with solution}}
 <h2>{{score}} - {{title}} {{> solutionVoting}}</h2>
-<p>{{description}}</p>
+<p>{{#autolink}}{{description}}{{/autolink}}</p>
 <h3>Fixes problem: {{#with problem}}<a href="{{pathFor 'problem' slug=slug}}">{{title}}</a>{{/with}}</h3>
 <hr>
 {{#unless $.Session.get "currentlyAddingTodo"}}
