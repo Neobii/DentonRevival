@@ -14,4 +14,13 @@ Template.statsView.helpers({
 	targetGroups() {
 		return TargetGroups.find();
 	},
+	commentsCount() {
+		return Comments.find().count()
+	},
+	todosCount() {
+		return SolutionsTodos.find().count()
+	},
+	metricsCount() {
+		return Metrics.find().count()
+	}
 });
