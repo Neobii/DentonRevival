@@ -22,7 +22,6 @@ module.exports = {
       MONGO_URL: 'mongodb://localhost/meteor'
     },
   },
-
   mongo: {
     oplog: true,
     port: 27017,
