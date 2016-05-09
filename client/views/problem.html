@@ -3,7 +3,8 @@
 <h2>{{score}} - {{title}} <br>{{> problemVoting}}</h2>
 <h3>{{targetGroup.name}}</h3>
 <p>{{description}}</p>
-<h3>Solutions - <a href="{{pathFor 'newSolution' slug=slug}}"><small>Add new Solution</small></a></h3>
+<h2>Performance Indicators - <a href="{{pathFor 'newPI' slug=slug}}"><small>Add new Performance Indicator</small></a></h2>
+<h2>Solutions - <a href="{{pathFor 'newSolution' slug=slug}}"><small>Add new Solution</small></a></h2>
 {{#each solutions}}
 {{> solution}}
 {{/each}}
