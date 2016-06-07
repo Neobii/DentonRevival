@@ -1,5 +1,7 @@
 <template name="calculateMetrics">
+{{#if Template.subscriptionsReady}}
 {{#each metrics}}
 {{> metricPhrase}}
 {{/each}}
+{{/if}}
 </template>

@@ -1,5 +1,7 @@
 <template name="solutionsList">
+{{#if Template.subscriptionsReady}}
 {{#each solutions}}
 {{> solution}}
 {{/each}}
+{{/if}}
 </template>
