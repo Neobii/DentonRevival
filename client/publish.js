@@ -1,0 +1,10 @@
+if(Meteor.isClient){
+Meteor.subscribe('metrics');
+Meteor.subscribe('problems');
+Meteor.subscribe('solutions');
+Meteor.subscribe('blogEntries');
+Meteor.subscribe('comments');
+Meteor.subscribe('projects');
+Meteor.subscribe('solutionsTodos');
+Meteor.subscribe('targetGroups');
+}
