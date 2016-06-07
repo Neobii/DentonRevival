@@ -11,8 +11,10 @@
 <h2>Comments <small><a href="" data-action='add-comment'>Add Comment</a></small></h2>
 {{/if}}
 <div class="row">
+{{#if Template.subscriptionsReady}}
 {{#each comments}}
 {{> singleComment}}
 {{/each}}
+{{/if}}
 </div>
 </template>
