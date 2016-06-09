@@ -1,5 +1,7 @@
 <template name="surveyQuestions">
+{{#if Template.subscriptionsReady}}
 {{#each metrics}}
 {{> askQuestion}}
 {{/each}}
+{{/if}}
 </template>

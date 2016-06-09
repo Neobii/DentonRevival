@@ -1,3 +1,25 @@
+Template.commentsView.onCreated(function(){
+	var instance = this;
+	instance.autorun(function(){
+			instance.subscribe('comments');
+	});
+});
+Template.commentsView.onCreated(function(){
+	var instance = this;
+	instance.autorun(function(){
+		var slug = FlowRouter.getParam('slug');
+		instance.subscribe('oneProblem',slug);
+	});
+});
+Template.commentsView.onCreated(function(){
+	var instance = this;
+	instance.autorun(function(){
+		var solutionSlug = FlowRouter.getParam('solutionSlug');
+		instance.subscribe('oneSolution',solutionSlug);
+	});
+});
+
+
 Template.commentsView.helpers({
 	comments() {
 		if(FlowRouter.getRouteName() === "comments"){

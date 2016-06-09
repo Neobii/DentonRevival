@@ -1,7 +1,9 @@
 <template name="blogView">
+{{#if Template.subscriptionsReady}}
 {{#each blogEntries}}
 <h3>{{title}} <small>{{timestamp}}</small></h3>
 <hr>
 {{{body}}}
 {{/each}}
+{{/if}}
 </template>
