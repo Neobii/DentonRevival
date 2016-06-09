@@ -2,7 +2,7 @@ Template.newPerformanceIndicatorView.onCreated(function(){
 	var instance = this;
 	instance.autorun(function(){
 		var slug = FlowRouter.getParam('slug');
-		instance.subcribe('oneProblem',slug);
+		instance.subscribe('oneProblem',slug);
 	});
 });
 
