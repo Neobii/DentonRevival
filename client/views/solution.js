@@ -1,3 +1,17 @@
+Template.solutionView.onCreated(function(){
+	var instance = this;
+	instance.autorun(function(){
+		var solutionSlug = FlowRouter.getParam("solutionSlug");
+		instance.subscribe('oneSolution',solutionSlug);
+	});
+});
+Template.solutionView.onCreated(function(){
+	var instance = this;
+	instance.autorun(function(){
+		var singleslug = FlowRouter.getParam('slug');
+		instance.subscribe('oneProblem',singleslug);
+	});
+});
 Template.solutionView.helpers({
 	solution() {
 		return Solutions.findOne({slug: FlowRouter.getParam("solutionSlug")})

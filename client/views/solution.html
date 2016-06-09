@@ -14,9 +14,11 @@
 {{/autoForm}}
 <hr>
 {{/unless}}
+{{#if Template.supscriptionsReady}}
 {{#each todos}}
 {{> solutionTodo}}
 {{/each}}
+{{/if}}
 {{/with}}
 {{> commentsView}}
 </template>

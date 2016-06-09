@@ -3,8 +3,10 @@
 <h2>{{name}}</h2>
 <p>{{#autolink}}{{description}}{{/autolink}}</p>
 <hr>
+{{#if Template.subscriptionsReady}}
 {{#each problems}}
 {{> problem}}
 {{/each}}
+{{/if}}
 {{/with}}
 </template>

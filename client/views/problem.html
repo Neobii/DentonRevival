@@ -3,14 +3,23 @@
 <h2>{{score}} - {{title}} <br>{{> problemVoting}}</h2>
 <h3>{{targetGroup.name}}</h3>
 <p>{{#autolink}}{{description}}{{/autolink}}</p>
-<h2>Performance Indicators - <a href="{{pathFor 'newPI' slug=slug}}"><small>Add new Performance Indicator</small></a></h2>
+<h2>Performance Indicators - <a href="{{pathFor 'newPI' slug=slug}}">
+
+<small>Add new Performance Indicator</small></a></h2>
+
+{{#if Template.subscriptionsReady}}
 {{#each metrics}}
 {{> metric}}
 {{/each}}
+{{/if}}
+
 <h2>Solutions - <a href="{{pathFor 'newSolution' slug=slug}}"><small>Add new Solution</small></a></h2>
+
+{{#if Template.subscriptionsReady}}
 {{#each solutions}}
 {{> solution}}
 {{/each}}
+{{/if}}
 {{/with}}
 {{> commentsView}}
 </template>

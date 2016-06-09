@@ -4,3 +4,4 @@ Meteor.startup(() => {
 	AccountsGuest.enabled = true;
   // code to run on server at startup
 });
+
