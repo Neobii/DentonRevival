@@ -1,9 +1,11 @@
 <template name="newSolutionView">
 {{#with problem}}<h1>{{title}}</h1>{{/with}}
 <hr>
-{{#autoForm collection="Solutions" type="insert" id="insertNewSolution"}}
-{{> afQuickField name="title"}}
-{{> afQuickField name="description"}}
-<button class="btn btn-primary" type="submit">Submit</button>
-{{/autoForm}}
+	<div class="content-box">
+		{{#autoForm collection="Solutions" type="insert" id="insertNewSolution"}}
+		{{> afQuickField name="title"}}
+		{{> afQuickField name="description"}}
+		<button class="btn btn-primary" type="submit">Submit</button>
+		{{/autoForm}}
+	</div>
 </template>

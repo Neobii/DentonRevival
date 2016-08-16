@@ -2,7 +2,7 @@
 <h2>Segments <a href="{{pathFor 'newTargetGroup'}}"><small>Add New Segment</small></a></h2>
 {{#if Template.subscriptionsReady}}
 {{#each targetGroups}}
-<div class="jumbotron">
+<div class="content-box">
 <h3><a href="{{pathFor 'targetGroup' slug=slug}}">{{name}}</a></h3>
 <p style="color:black">{{#autolink}}{{description}}{{/autolink}}</p>
 </div>

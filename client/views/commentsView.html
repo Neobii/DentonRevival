@@ -1,14 +1,17 @@
 <template name="commentsView">
 {{#if $.Session.get "isAddingComment"}}
+<div class="content-box">
 <h2>Comments <small><a href="" data-action='cancel-comment'>Cancel</a></small></h2>
 {{#autoForm collection="Comments" id="newCommentGlobal" type="insert"}}
 {{> afQuickField name="name"}}
 {{> afQuickField name="comment"}}
 <button class="btn btn-primary">Submit</button>
 {{/autoForm}}
+</div>
 <hr>
 {{else}}
-<h2>Comments <small><a href="" data-action='add-comment'>Add Comment</a></small></h2>
+<h2>Comments <a href="" data-action='add-comment'><small>Add Comment</small></a></h2>
+<hr>
 {{/if}}
 <div class="row">
 {{#if Template.subscriptionsReady}}

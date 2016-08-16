@@ -1,0 +1,44 @@
+@import './colors.scss';
+
+//navbar mess
+
+.navbar {
+	background-color:unset;
+	background-image:url("/admin_topbar_tileable.png");
+	color:$whiteish;
+}
+
+.brand-title {
+	line-height: 80px;
+	padding:0 3em 0 .8em;
+}
+
+.navbar a{
+	color:$whiteish !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color:$dkBlue !important;
+	background-image: url("/kiosk_lightBG_tileable.png");
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color:$dkBlue !important;
+	background-image: url("/kiosk_lightBG_tileable.png");
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-image:url("/admin_topbar_tileable.png");
+}
+
+.navbar-nav > li > .dropdown-menu a:hover{
+	color:$dkBlue !important;
+	background-image: url("/kiosk_lightBG_tileable.png");
+}
+
+.dropdown.open {
+	background-color:unset !important;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #4776bf !important;
+  text-decoration: none;
+}

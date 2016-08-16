@@ -18,6 +18,9 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 insecure                # Allow all DB writes from clients (for prototyping)
+fourseven:scss
+reywood:font-awesome-sass
+reywood:bootstrap3-sass
 aldeed:collection2
 aldeed:autoform
 kadira:flow-router

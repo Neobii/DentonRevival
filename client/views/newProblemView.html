@@ -1,11 +1,14 @@
 <template name="newProblemView">
 <h2>Add a new Problem </h2>
-{{#autoForm type="insert" collection="Problems" id="insertProblem"}}
-{{> afQuickField name="title"}}
-{{> afQuickField name="targetGroupId"}}
-{{> afQuickField name="description"}}
-<button type="submit" class="btn btn-primary">Submit</button>
-{{/autoForm}}
+<hr>
+	<div class="content-box">
+		{{#autoForm type="insert" collection="Problems" id="insertProblem"}}
+		{{> afQuickField name="title"}}
+		{{> afQuickField name="targetGroupId"}}
+		{{> afQuickField name="description"}}
+		<button type="submit" class="btn btn-primary">Submit</button>
+		{{/autoForm}}
+	</div>
 <hr>
 <h3><a href="http://www.ceptara.com/blog/how-to-write-problem-statement">What's a problem statement?</a></h3>
 </template>

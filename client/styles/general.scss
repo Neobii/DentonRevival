@@ -1,0 +1,51 @@
+@import './colors.scss';
+
+body {
+	background-image: url("/kiosk_lightBG_tileable.png");
+}
+
+.content-box {
+	background-color:rgba(255,255,255,.5);
+	border-radius: 6px;
+	padding:5px 12px;
+	margin-top:1em;
+}
+
+.content-box p {
+	color: $greyish;
+}
+
+.content-box.moderate{
+	background-color:rgba(240,180,213,.5);
+}
+
+h1 {
+	font-size:2.7em;
+	margin-top:.6em;
+}
+
+
+.content-box h2{
+	color: $dkBlue;
+	font-size:1.8em;
+	margin:.2em 0;
+}
+
+h2 {
+	font-size:1.3em;
+	color: $ltGrey;
+}
+
+p {
+	margin:1em 0;
+	font-size:1em;
+}
+
+h1 small {
+	color: $ltBlue;
+	font-size:.6em;
+}
+
+.box-list {
+	margin-bottom:2em;
+}

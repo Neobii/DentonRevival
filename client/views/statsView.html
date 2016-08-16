@@ -1,22 +1,26 @@
 <template name="statsView">
 <h2>What is the state of denton?<a href="{{pathFor 'surveyQuestions'}}"><small>Answer Questions</small></a></h2>
 {{> calculateMetrics}}
-<div class="row">
+<div class="row content-box">
 <div class="col-md-6">
-<h2>Stats</h2>
+<!-- <div class="content-box">
+ --><h2>Stats</h2>
 <h3><a href="{{pathFor 'problems'}}">Total Problems: {{problemCount}}</a></h3>
-<h3>Total Solutions: {{solutionCount}}</h3>
+<!-- <h3>Total Solutions: {{solutionCount}}</h3> -->
 <!--<h3>Total Votes: {{voteCount}}</h3>-->
 <h3><a href="{{pathFor 'targetGroups'}}">Total Segments: {{segmentCount}}</a></h3>
 <h3>Total Comments: {{commentsCount}}</h3>
 <h3>Total Metrics: {{metricsCount}}</h3>
 <h3>Total Todos: {{todosCount}}</h3>
+<!--</ div >-->
 </div>
 <div class="col-md-6">
-<h2><a href="{{pathFor 'targetGroups'}}"> Segments</a></h2>
+<!-- <div class="content-box">
+ --><h2><a href="{{pathFor 'targetGroups'}}"> Segments</a></h2>
 {{#each targetGroups}}
 <h3><a href="{{pathFor 'targetGroup' slug=slug}}">{{name}}</a></h3>
 {{/each}}
+<!-- </ --><!-- div -->
 </div>
 </div>
 </template>
