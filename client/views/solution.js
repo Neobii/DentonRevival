@@ -1,15 +1,15 @@
 Template.solutionView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
+
+	this.autorun(()=>{
 		var solutionSlug = FlowRouter.getParam("solutionSlug");
-		instance.subscribe('oneSolution',solutionSlug);
+		this.subscribe('oneSolution',solutionSlug);
 	});
 });
 Template.solutionView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
+	
+	this.autorun(()=>{
 		var singleslug = FlowRouter.getParam('slug');
-		instance.subscribe('oneProblem',singleslug);
+		this.subscribe('oneProblem',singleslug);
 	});
 });
 Template.solutionView.helpers({

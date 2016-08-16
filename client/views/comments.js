@@ -1,21 +1,21 @@
 Template.commentsView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-			instance.subscribe('comments');
+
+	this.autorun(()=>{
+			this.subscribe('comments');
 	});
 });
 Template.commentsView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
+	
+	this.autorun(()=>{
 		var slug = FlowRouter.getParam('slug');
-		instance.subscribe('oneProblem',slug);
+		this.subscribe('oneProblem',slug);
 	});
 });
 Template.commentsView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
+	
+	this.autorun(()=>{
 		var solutionSlug = FlowRouter.getParam('solutionSlug');
-		instance.subscribe('oneSolution',solutionSlug);
+		this.subscribe('oneSolution',solutionSlug);
 	});
 });
 

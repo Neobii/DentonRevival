@@ -1,7 +1,6 @@
 Template.targetGroupsView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-		instance.subscribe('targetGroups');
+	this.autorun(()=>{
+		this.subscribe('targetGroups');
 	});
 });
 

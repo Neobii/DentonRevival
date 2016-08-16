@@ -1,7 +1,7 @@
 Template.popularView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-		instance.subscribe('problems');
+
+	this.autorun(()=>{
+		this.subscribe('problems');
 	});
 });	
 Template.popularView.helpers({

@@ -1,7 +1,9 @@
 <template name="newTargetGroupView">
-{{# autoForm id="newTargetGroup" collection="TargetGroups" type="insert"}}
-{{> afQuickField name='name'}}
-{{> afQuickField name='description'}}
-<button class="btn btn-primary" type="submit">Submit</button>
-{{/autoForm}}
+	<div class="content-box">
+		{{# autoForm id="newTargetGroup" collection="TargetGroups" type="insert"}}
+		{{> afQuickField name='name'}}
+		{{> afQuickField name='description'}}
+		<button class="btn btn-primary" type="submit">Submit</button>
+		{{/autoForm}}
+	</div>
 </template>

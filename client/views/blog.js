@@ -1,7 +1,7 @@
 Template.blogView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-		instance.subscribe('blogEntries');
+
+	this.autorun(()=> {
+		this.subscribe('blogEntries');
 	});
 });
 

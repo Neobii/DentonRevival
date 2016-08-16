@@ -1,8 +1,8 @@
 Template.targetGroupView.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
+
+	this.autorun(()=>{
 		var slug = FlowRouter.getParam('slug');
-		instance.subscribe('SingletargetGroups',slug);
+		this.subscribe('SingletargetGroups',slug);
 	});
 });
 
