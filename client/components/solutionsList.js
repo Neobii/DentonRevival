@@ -1,7 +1,6 @@
 Template.solutionsList.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-		instance.subscribe('solutions');
+	this.autorun(()=>{
+		this.subscribe('solutions');
 	});
 });
 Template.solutionsList.helpers({

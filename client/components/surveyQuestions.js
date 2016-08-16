@@ -1,7 +1,6 @@
 Template.surveyQuestions.onCreated(function(){
-	var instance = this;
-	instance.autorun(function(){
-		instance.subscribe('metrics');
+	this.autorun(()=>{
+		this.subscribe('metrics');
 	});
 });
 Template.surveyQuestions.helpers({
